@@ -1,0 +1,71 @@
+.date-input-wrapper {
+    width: fit-content;
+}
+.date-input-wrapper label {
+    color: var(--mdui-color-on-primary);
+    top: -10px;
+    left: 10px;
+}
+.date-input {
+    font-size: 1rem;
+    border: 2px solid rgb(var(--mdui-color-primary));
+    background-color: rgb(var(--mdui-color-background));
+    height: 40px;
+}
+.datepicker {
+    background-color: rgb(var(--mdui-color-surface-container-high));
+    top: 100%;
+    right: 0%;
+}
+.datepicker button {
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    background: transparent;
+    transition: all 0.3s;
+}
+.days,
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 32px);
+    gap: 10px;
+}
+.dates button {
+    aspect-ratio: 1;
+}
+.dates button:hover {
+    background: rgb(var(--mdui-color-primary));
+    color: rgb(var(--mdui-color-on-primary));
+    border: 1px solid rgb(var(--mdui-color-primary));
+}
+.dates button:disabled {
+    opacity: 0.75;
+    pointer-events: none;
+    user-select: none;
+}
+.dates button.today {
+    background: transparent;
+    border: 1px solid rgb(var(--mdui-color-primary));
+    color: rgb(var(--mdui-color-primary));
+}
+.dates button.selected {
+    background: rgb(var(--mdui-color-primary));
+    color: rgb(var(--mdui-color-on-primary));
+    border: 1px solid rgb(var(--mdui-color-primary));
+}
+.datepicker-footer button {
+    color: rgb(var(--mdui-color-primary));
+}
+.datepicker-footer button:hover {
+    background: rgb(var(--mdui-color-primary));
+    color: rgb(var(--mdui-color-on-primary));
+}
+@media (max-width: 380px) {
+    .datepicker {
+        left: -18%;
+    }
+}
+
+.datepicker-input-label {
+    background-color: rgb(var(--mdui-color-background));
+}
